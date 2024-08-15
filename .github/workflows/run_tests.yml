@@ -26,6 +26,8 @@ jobs:
       - name: Show Conda Info
         run: conda info
 
+      - name: list conda packages
+        run: conda list
 
 
 
