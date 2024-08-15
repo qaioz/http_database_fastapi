@@ -10,6 +10,7 @@ on :
 jobs:
   example-3:
     defaults:
+      -name: example-3
       run:
         shell: bash -el {0} # Set the default shell to bash
 
