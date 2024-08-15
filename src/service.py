@@ -114,20 +114,20 @@ class CollectionService:
         return False
 
     def add_document(self, collection_name: str, document: dict) -> str:
-        """returns the document_id of the added document"""
-        if not self.exists_by_name(collection_name):
-            raise NoSuchCollectionException(collection_name)
-
-        document = CollectionService.__set_object_id(document)
-
-        with open(os.path.join(self.collections_dir_path, collection_name + ".json"), "a") as file:
-            file.write(json.dumps(document) + "\n")
-
-        #         update the size of the collection
-        new_collection = self.get_collection(collection_name)
-        new_collection["size"] += 1
-        self.update_collection(collection_name, new_collection)
-        logging.debug(f"Added document to collection {collection_name}")
+        # """returns the document_id of the added document"""
+        # if not self.exists_by_name(collection_name):
+        #     raise NoSuchCollectionException(collection_name)
+        #
+        # document = CollectionService.__set_object_id(document)
+        #
+        # with open(os.path.join(self.collections_dir_path, collection_name + ".json"), "a") as file:
+        #     file.write(json.dumps(document) + "\n")
+        #
+        # #         update the size of the collection
+        # new_collection = self.get_collection(collection_name)
+        # new_collection["size"] += 1
+        # self.update_collection(collection_name, new_collection)
+        # logging.debug(f"Added document to collection {collection_name}")
         return document["_document_id"]
 
     def get_document(self, collection_name: str, document_id: str):

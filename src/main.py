@@ -10,6 +10,7 @@ from .dependencies import get_service
 
 app = FastAPI()
 
+# asda
 
 @app.exception_handler(CollectionAlreadyExistsException)
 async def collection_already_exists_exception_handler(request, exc: CollectionAlreadyExistsException):
