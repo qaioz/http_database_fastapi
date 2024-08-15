@@ -29,7 +29,6 @@ jobs:
       # Run tests (adjust this based on your project)
       - name: Run Tests
         run: |
-          conda activate http_database_env
           pytest
 
 
