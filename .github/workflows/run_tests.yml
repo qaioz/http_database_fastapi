@@ -19,12 +19,15 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
+      - name: list packages
+        run: ls
+
       # Set up Miniconda and create environment from environment.yml
       - name: Set up Miniconda
         uses: conda-incubator/setup-miniconda@v3
         with:
-          environment-file: environment.yml
           activate-environment: http_database_env
+          environment-file: environment.yml
           auto-activate-base: false
 
       # Run a command to display Conda information (or any other command)
@@ -39,6 +42,7 @@ jobs:
 
       - name: $conda variable
         run: echo $CONDA
+
         # Run the tests
       - name: Run tests
         run: |
