@@ -8,7 +8,6 @@ on :
 
 jobs:
   run_tests:
-    name: Ex3 Linux
     runs-on: "ubuntu-latest"
 
     steps:
