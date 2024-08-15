@@ -37,6 +37,8 @@ jobs:
       - name: conda init
         run: conda init
 
+      - name: $conda variable
+        run: echo $CONDA
         # Run the tests
       - name: Run tests
         run: |
