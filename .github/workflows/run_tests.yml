@@ -8,14 +8,11 @@ on :
 
 
 jobs:
-  example-3:
-    defaults:
-      -name: example-3
-      run:
-        shell: bash -el {0} # Set the default shell to bash
-
   run_tests:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ${{ github.workspace }}
 
     steps:
       # Checkout the code from the repository
