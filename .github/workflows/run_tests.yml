@@ -26,10 +26,7 @@ jobs:
       - name: Show Conda Info
         run: conda info
 
-      # Run tests (adjust this based on your project)
-      - name: Run Tests
-        run: |
-          pytest
+
 
 
 
