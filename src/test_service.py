@@ -7,6 +7,8 @@ from pytest_mock import MockerFixture
 from .exception import NoSuchCollectionException, NoSuchDocumentException, CollectionAlreadyExistsException
 
 
+
+
 @pytest.fixture
 def temp_directory(tmp_path):
     return tmp_path
