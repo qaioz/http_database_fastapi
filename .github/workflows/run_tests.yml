@@ -37,13 +37,8 @@ jobs:
           conda info
 
       # Ensure the Conda environment is activated
-      - name: Ensure Conda Environment
-        shell: bash -l {0}
+      - name: run tests
         run: |
-          source ~/.bashrc
           conda activate http_database_env
-          conda info
-          conda env list
-          pytest src/test_server.py
-
+          pytest tests
 
