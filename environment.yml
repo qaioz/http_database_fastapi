@@ -11,6 +11,7 @@ dependencies:
   - click=8.1.7=py312h06a4308_0
   - expat=2.6.2=h6a678d5_0
   - h11=0.14.0=py312h06a4308_0
+  - iniconfig=1.1.1=pyhd3eb1b0_0
   - ld_impl_linux-64=2.38=h1181459_1
   - libedit=3.1.20230828=h5eee18b_0
   - libexpat=2.6.2=h59595ed_0
@@ -25,10 +26,13 @@ dependencies:
   - libzlib=1.3.1=h4ab18f5_1
   - ncurses=6.4=h6a678d5_0
   - openssl=3.3.1=h4bc722e_2
+  - packaging=24.1=py312h06a4308_0
   - pip=24.2=py312h06a4308_0
+  - pluggy=1.0.0=py312h06a4308_1
   - pydantic=2.8.2=pyhd8ed1ab_0
   - pydantic-core=2.20.1=py312hf008fa9_0
   - pydantic-settings=2.4.0=pyhd8ed1ab_0
+  - pytest=7.4.4=py312h06a4308_0
   - python=3.12.2=hab00c5b_0_cpython
   - python-dotenv=0.21.0=py312h06a4308_0
   - python_abi=3.12=4_cp312
@@ -59,6 +63,7 @@ dependencies:
       - markupsafe==2.1.5
       - mdurl==0.1.2
       - pygments==2.18.0
+      - pytest-mock==3.14.0
       - python-multipart==0.0.9
       - pyyaml==6.0.2
       - rich==13.7.1

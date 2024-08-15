@@ -29,6 +29,9 @@ jobs:
       - name: list conda packages
         run: conda list
 
+        # Run the tests
+      - name: Run tests
+        run: pytest src/test_server.py
 
 
 
