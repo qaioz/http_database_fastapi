@@ -39,6 +39,5 @@ jobs:
       # Ensure the Conda environment is activated
       - name: run tests
         run: |
-          conda activate http_database_env
-          pytest tests
+          conda run -n http_database_env pytest src/test_service.py
 
