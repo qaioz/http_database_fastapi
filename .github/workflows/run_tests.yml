@@ -29,6 +29,9 @@ jobs:
       - name: list conda packages
         run: conda env list
 
+      - name: activate conda environment
+        run: conda activate http_database_env
+
         # Run the tests
       - name: Run tests
         run: pytest src/test_server.py
