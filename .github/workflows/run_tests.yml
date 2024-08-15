@@ -5,7 +5,14 @@ on :
     branches:
       - feature/adding_workflows
 
+
+
 jobs:
+  example-3:
+    defaults:
+      run:
+        shell: bash -el {0} # Set the default shell to bash
+
   run_tests:
     runs-on: ubuntu-latest
 
