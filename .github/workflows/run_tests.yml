@@ -18,8 +18,8 @@ jobs:
       - name: Set up Miniconda
         uses: conda-incubator/setup-miniconda@v3
         with:
-          activate-environment: http_database_env
           environment-file: environment.yml
+          activate-environment: http_database_env
           auto-activate-base: false
 
       # Run a command to display Conda information (or any other command)
@@ -27,7 +27,7 @@ jobs:
         run: conda info
 
       - name: list conda packages
-        run: conda list
+        run: conda env list
 
         # Run the tests
       - name: Run tests
