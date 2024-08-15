@@ -40,7 +40,7 @@ jobs:
         # Run the tests
       - name: Run tests
         run: |
-          pytest src/test_server.py
+          conda run pytest src/test_server.py
 
 
 
